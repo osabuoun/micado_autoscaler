@@ -1,0 +1,13 @@
+{ 
+	"experiment_id"			: "exp_1515150934474_752",
+	"service_name"			: "customer_app5",
+	// int_number#unit (s: second, m: minute, h: hour, default: second), e.g 15#s
+	"experiment_deadline"	: "10#m" , 
+	"replica_min"			: "2" ,
+	"replica_max"			: "20" ,
+	// int_number#unit (s: second, m: minute, h: hour, default: second), e.g 15#s
+	// single_task_duration has priority over single_job_duration
+	"single_task_duration"	: "30#m" , 
+	// int_number#unit (s: second, m: minute, h: hour, default: second), e.g 15#s
+	"single_job_duration"	: "300#m" , 
+}

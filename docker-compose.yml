@@ -1,0 +1,12 @@
+version: '2'
+services:
+    autoscaler:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/autoscaler
+            - /usr/bin/docker:/usr/bin/docker
+            - /var/run/docker.sock:/var/run/docker.sock
+        ports:
+            - "7799:8000"
